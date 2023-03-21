@@ -1,0 +1,176 @@
+ /*-----------------------------------*\ 
+  #foodie.css
+\*-----------------------------------*/
+
+/*-----------------------------------*\ 
+  AK
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * colors 
+   */
+
+  --red-orange-crayola: hsl(0, 100%, 66%);
+  --space-cadet: hsl(249, 37%, 19%);
+  --pistachio: hsl(88, 50%, 60%);
+  --cultured: hsl(220, 13%, 95%);
+  --saffron: hsl(45, 91%, 58%);
+  --rhythm: hsl(240, 9%, 51%);
+  --white: hsl(0, 0%, 100%);
+
+  /**
+   * typography 
+   */
+
+  --fs-1: 46px;
+  --fs-2: 28px;
+  --fs-3: 18px;
+  --fs-4: 15px;
+  --fs-5: 14px;
+
+  /**
+   * spacing 
+   */
+
+  --px: 30px;
+  --py: 60px;
+
+  /**
+   * others 
+   */
+
+  --default-transition: 0.75s ease;
+
+}
+
+
+
+
+
+/*-----------------------------------*\ 
+  #RESET
+\*-----------------------------------*/
+
+*, *::before, *::after {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-offset: 5px;
+}
+
+li { list-style: none; }
+
+a {
+  font: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img, svg, ion-icon, span, button { display: block; }
+
+html {
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar { width: 5px; }
+
+::-webkit-scrollbar-track { background: var(--cultured); }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: var(--saffron);
+}
+
+::-webkit-scrollbar-thumb:hover { background: var(--space-cadet); }
+
+/-----------------------------------\ 
+  #REUSED STYLE
+\-----------------------------------/
+
+.btn {
+  height: 55px;
+  padding: 0 25px;
+  color: var(--space-cadet);
+  font-size: 14px;
+  font-weight: 500;
+  transition: var(--default-transition);
+}
+
+.btn:hover { filter: saturate(1.05) brightness(1.05); }
+
+.btn-primary { background: var(--saffron); }
+
+.btn-secondary { background: var(--cultured); }
+
+.btn-icon {
+  display:     flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title {
+  max-width: 420px;
+  color: var(--space-cadet);
+  font-size: var(--fs-2);
+  font-weight: 600;
+}
+
+.section-text {
+  max-width: 320px;
+  color: var(--rhythm);
+  font-size: var(--fs-4);
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+
+/-----------------------------------\ 
+  #MAIN CONTAINER
+\-----------------------------------/
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  background: var(--white);
+  overflow: hidden;
+}
+
+
+
+
+
+/-----------------------------------\ 
+  #HEADER
+\-----------------------------------/
+
+.navbar {
+  position: fixed;
+  top:   0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 20px 30px;
+  background: hsla(0, 0%, 100%, 0.99);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.05);
+  z-index: 5;
+}
+
+.navbar-wrapper {
+  display:         flex;
+  justify-content: space-between;
+  align-items:     center;
+}
