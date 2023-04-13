@@ -215,3 +215,53 @@ html {
   align-items: center;
   gap: 25px;
 }
+
+.shopping-cart-btn {
+  position: relative;
+  background: var(--cultured);
+  width:  50px;
+  height: 50px;
+  border-radius: 50%;
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  border: 2px solid var(--white);
+}
+
+.shopping-cart-btn .count {
+  background: var(--saffron);
+  position: absolute;
+  top:   -2px;
+  right: -2px;
+  height:    20px;
+  min-width: 20px;
+  display:     flex;
+  align-items: center;
+  padding: 0 7px;
+  border-radius: 20px;
+  color: var(--space-cadet);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.menu-toggle-btn {
+  display:        flex;
+  flex-direction: column;
+  width: 20px;
+  gap: 5px;
+}
+
+.menu-toggle-btn .line {
+  background: var(--space-cadet);
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.25s ease;
+}
+
+.menu-toggle-btn.active .one { transform: translateY(7px) rotate(-45deg); }
+
+.menu-toggle-btn.active .two { transform: rotate(45deg); }
+
+.menu-toggle-btn.active .three { transform: translateY(-7px) rotate(-45deg); }
+
