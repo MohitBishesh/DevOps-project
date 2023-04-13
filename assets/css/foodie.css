@@ -174,3 +174,44 @@ html {
   justify-content: space-between;
   align-items:     center;
 }
+
+.navbar-nav {
+  background: hsla(0, 0%, 100%, 0.9);
+  position: absolute;
+  top: 91px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 91px);
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  gap: 30px;
+  padding: 35px;
+  backdrop-filter: blur(10px);
+  transform: translateY(50px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-nav.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.nav-link {
+  color: var(--space-cadet);
+  font-size: var(--fs-5);
+  transition: 0.25s ease;
+}
+
+.nav-link:hover { color: var(--saffron); }
+
+.navbar-btn-group {
+  display:     flex;
+  align-items: center;
+  gap: 25px;
+}
