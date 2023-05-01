@@ -2,7 +2,7 @@
 
 Authors : 
 @ankush katiyar
-@mohitbishesh
+@MohitBishesh
 @kanhaiya singh
 @Ashutosh Lodha
 
