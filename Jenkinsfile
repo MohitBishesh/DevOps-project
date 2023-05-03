@@ -25,7 +25,7 @@ pipeline {
             }
          }
       }
-     stage('Sonarqube Analysis - SAST') {
+     stage('Sonarqube Analysis - Analysis') {
          steps {
                withSonarQubeEnv('SonarQube') {
           sh "mvn clean verify sonar:sonar \
