@@ -31,7 +31,7 @@ pipeline {
           sh "mvn clean verify sonar:sonar \
                 -Dsonar.projectKey=Devops-final \
   	                -Dsonar.projectName='Devops-final' \
-  		                  -Dsonar.host.url=http://34.225.118.36:9000 \"
+  		                  -Dsonar.host.url=http://34.225.118.36:9000"
                }
            }
         }
