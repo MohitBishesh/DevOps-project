@@ -12,8 +12,8 @@ RUN npm install
 # Copy the rest of the application code to the container
 COPY . .
 
-# Expose port 8080 to the outside world
-EXPOSE 8080
+# Expose port 8085 to the outside world
+EXPOSE 8085
 
 # Start the Node.js server
 CMD ["npm", "start"]
