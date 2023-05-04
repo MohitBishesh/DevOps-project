@@ -1,0 +1,12 @@
+{
+  "name": "devops-project",
+  "version": "1.0.0",
+  "description": "Authors :  @ankush katiyar @MohitBishesh @kanhaiya singh @Ashutosh Lodha",
+  "main": "foodie.js",
+  "scripts": {
+    "test": "npm foodie.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
